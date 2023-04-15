@@ -70,7 +70,7 @@ a:hover {
     margin-left: 20px;
 }
 
-.map-icon:hover {
+.location:hover .map-icon {
     animation-name: flip;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -92,17 +92,13 @@ h2 {
     cursor: pointer;
 }
 
+h2:hover,
 h1:hover {
     color: rgb(110, 113, 109);
     animation-duration: 2s;
     transition: 0.2s;
 }
 
-h2:hover {
-    color: rgb(110, 113, 109);
-    animation-duration: 2s;
-    transition: 0.2s;
-}
 
 @keyframes flip {
     0% {
@@ -130,14 +126,15 @@ h2:hover {
 
 .hero {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.445)), url(CoffeeShopLatte_484934bf-4ca5-4c8d-b20f-d2b5829a1e06.png);
     height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.445)), url(CoffeeShopLatte_484934bf-4ca5-4c8d-b20f-d2b5829a1e06.png);
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 
 .hero-text {
     text-align: center;
