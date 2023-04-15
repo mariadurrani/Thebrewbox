@@ -16,8 +16,6 @@ body {
     margin: auto;
     padding: 30px;
     align-items: center;
-
-
 }
 
 ul {
@@ -52,6 +50,12 @@ a:hover {
     font-weight: 200;
     cursor: pointer;
     margin-left: 34vh;
+}
+
+.logo-text:hover{
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
 }
 
 .location {
@@ -95,4 +99,12 @@ p:hover {
     100% {
         transform: rotate3d(0, 1, 0, -180deg);
     }
-}
+    
+    @keyframes pulse {
+        0% {
+          transform: scale3d(1, 1, 1); }
+        50% {
+          transform: scale3d(1.1, 1.1, 1.1); }
+        100% {
+          transform: scale3d(1, 1, 1); } }
+      
