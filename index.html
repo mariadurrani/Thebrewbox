@@ -24,11 +24,13 @@
             <a href="#"><img src="/location-dot-solid.svg" alt="" class="map-icon"></a>
             <h2>Hitta oss</h2>
         </div>
+        <img src="menu.png" class="menu-icon">
+
     </div>
 
     <div class="hero">
         <form class="form">
-            <div class="hero-text">Registrera dig för nyhetsbrev från The Brew Box!</div>
+            <div class="form-text">Registrera dig för nyhetsbrev från The Brew Box!</div>
             <br>
             <div>
                 <label for="fname">Förnamn:</label>
@@ -42,17 +44,17 @@
             <br>
             <div>
                 <label for="bdate">Född: </label>
-                <input type="date" id="bdate" name="bdate">
+                <input type="date" id="bdate" name="bdate" required>
             </div>
             <br>
             <div>
                 <label for="email">E-postadress:</label>
-                <input type="email" id="email" name="email" placeholder="example@domain.com">
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
             </div>
             <br>
             <div>
                 <label for="phone">Mobilnummer:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+46">
+                <input type="tel" id="phone" name="phone" maxlength="12" placeholder="+46" required>
             </div>
             <br>
             <div>

@@ -47,7 +47,7 @@ a:hover {
     font-size: 27px;
     font-weight: 200;
     cursor: pointer;
-    margin-left: 34vh;
+    margin-left: 280px;
 }
 
 .logo-text:hover {
@@ -61,13 +61,15 @@ a:hover {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin-left: 420px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
 }
 
 .map-icon {
-    display: flex;
     width: 20px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .location:hover .map-icon {
@@ -97,6 +99,11 @@ h1:hover {
     color: rgb(110, 113, 109);
     animation-duration: 2s;
     transition: 0.2s;
+}
+
+.menu-icon {
+    width: 25px;
+    display: none;
 }
 
 
@@ -136,14 +143,19 @@ h1:hover {
 }
 
 
-.hero-text {
+.form-text {
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ;
+    font-size: 19px;
+    letter-spacing: -0.5px;
+
 }
 
 .form {
-    border: 2px solid #ffffff;
+    border: 2px solid #ffffff3b;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: #ffffff8e;
     margin: 0 110vh 0 0;
     padding: 10px;
     width: 20%;
@@ -154,6 +166,43 @@ h1:hover {
     box-sizing: border-box;
     min-width: max-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    ;
+}
 
+button,
+input,
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        width: 100%;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .logo-text {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        right: 0;
+        position: absolute;
+    }
+
+    .hero {
+        background-position: right;
+        flex-wrap: wrap;
+        position: fixed;
+
+    }
 }
