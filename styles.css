@@ -133,7 +133,7 @@ h1:hover {
 
 .hero {
     display: flex;
-    height: 700px;
+    height: 770px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.445)), url(CoffeeShopLatte_484934bf-4ca5-4c8d-b20f-d2b5829a1e06.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,9 +146,9 @@ h1:hover {
 .form-text {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    ;
     font-size: 19px;
     letter-spacing: -0.5px;
+    margin-bottom: 30px;
 
 }
 
@@ -242,9 +242,29 @@ label {
     }
 
     .hero {
-        background-position: right;
-        flex-wrap: wrap;
-        position: fixed;
-    } 
+        background-position: center;
+        height: 700px;
+        width: 100%;
+    }
 
+    .form {
+        width: fit-content;
+    }
+
+    .footer {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer div h3 {
+        font-size: 15px;
+    }
+
+    .col-1 a,
+    .col-2 a,
+    .col-3 a {
+        width: 50%;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
 }
